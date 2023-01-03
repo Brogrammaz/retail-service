@@ -1,0 +1,13 @@
+com/kharim/inventoryservice/service/InventoryService.java
+ com.kharim.inventoryservice.service.InventoryService
+com/kharim/inventoryservice/dto/InventoryResponse.java
+ com.kharim.inventoryservice.dto.InventoryResponse
+ com.kharim.inventoryservice.dto.InventoryResponse$InventoryResponseBuilder
+com/kharim/inventoryservice/models/Inventory.java
+ com.kharim.inventoryservice.models.Inventory
+com/kharim/inventoryservice/controllers/InventoryController.java
+ com.kharim.inventoryservice.controllers.InventoryController
+com/kharim/inventoryservice/InventoryServiceApplication.java
+ com.kharim.inventoryservice.InventoryServiceApplication
+com/kharim/inventoryservice/repository/InventoryRepository.java
+ com.kharim.inventoryservice.repository.InventoryRepository

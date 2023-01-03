@@ -1,0 +1,2 @@
+com/kharim/inventoryservice/InventoryserviceApplicationTests.java
+ com.kharim.inventoryservice.InventoryserviceApplicationTests

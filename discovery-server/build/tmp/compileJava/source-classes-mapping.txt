@@ -1,0 +1,2 @@
+com/kharim/discoveryserver/DiscoveryServerApplication.java
+ com.kharim.discoveryserver.DiscoveryServerApplication

@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.7'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group 'org.kharim'
+version '1.0-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_11
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    group 'com.example'
+    version '1.0-SNAPSHOT'
+    sourceCompatibility = JavaVersion.VERSION_11
+
+    ext {
+        set('springCloudVersion', "2021.0.5")
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+ext {
+    set('springCloudVersion', "2021.0.5")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation project(':inventory-service')
+    implementation project(':order-service')
+    implementation project(':product-service')
+    implementation project(':discovery-server')
+}
+
+test {
+    useJUnitPlatform()
+}

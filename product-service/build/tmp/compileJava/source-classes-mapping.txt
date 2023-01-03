@@ -1,0 +1,17 @@
+com/kharim/productservice/models/Product.java
+ com.kharim.productservice.models.Product
+ com.kharim.productservice.models.Product$ProductBuilder
+com/kharim/productservice/dto/ProductResponse.java
+ com.kharim.productservice.dto.ProductResponse
+ com.kharim.productservice.dto.ProductResponse$ProductResponseBuilder
+com/kharim/productservice/dto/ProductRequest.java
+ com.kharim.productservice.dto.ProductRequest
+ com.kharim.productservice.dto.ProductRequest$ProductRequestBuilder
+com/kharim/productservice/services/ProductService.java
+ com.kharim.productservice.services.ProductService
+com/kharim/productservice/controllers/ProductController.java
+ com.kharim.productservice.controllers.ProductController
+com/kharim/productservice/ProductServiceApplication.java
+ com.kharim.productservice.ProductServiceApplication
+com/kharim/productservice/repositories/ProductRepository.java
+ com.kharim.productservice.repositories.ProductRepository

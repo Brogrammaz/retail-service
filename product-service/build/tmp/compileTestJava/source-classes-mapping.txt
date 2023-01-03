@@ -1,0 +1,2 @@
+com/kharim/productservice/RetailServiceApplicationTests.java
+ com.kharim.productservice.RetailServiceApplicationTests

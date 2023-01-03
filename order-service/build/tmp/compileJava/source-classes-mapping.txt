@@ -1,0 +1,21 @@
+com/kharim/orderservice/controllers/OrderController.java
+ com.kharim.orderservice.controllers.OrderController
+com/kharim/orderservice/services/OrderService.java
+ com.kharim.orderservice.services.OrderService
+com/kharim/orderservice/dto/OrderRequest.java
+ com.kharim.orderservice.dto.OrderRequest
+com/kharim/orderservice/dto/OrderedItemsDto.java
+ com.kharim.orderservice.dto.OrderedItemsDto
+com/kharim/orderservice/dto/InventoryResponse.java
+ com.kharim.orderservice.dto.InventoryResponse
+ com.kharim.orderservice.dto.InventoryResponse$InventoryResponseBuilder
+com/kharim/orderservice/repository/OrderRepository.java
+ com.kharim.orderservice.repository.OrderRepository
+com/kharim/orderservice/models/OrderedItems.java
+ com.kharim.orderservice.models.OrderedItems
+com/kharim/orderservice/models/Order.java
+ com.kharim.orderservice.models.Order
+com/kharim/orderservice/OrderServiceApplication.java
+ com.kharim.orderservice.OrderServiceApplication
+com/kharim/orderservice/config/WebConfig.java
+ com.kharim.orderservice.config.WebConfig
