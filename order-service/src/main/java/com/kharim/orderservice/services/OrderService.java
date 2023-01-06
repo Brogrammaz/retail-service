@@ -1,5 +1,6 @@
 package com.kharim.orderservice.services;
 
+import com.kharim.orderservice.config.WebConfig;
 import com.kharim.orderservice.dto.InventoryResponse;
 import com.kharim.orderservice.dto.OrderRequest;
 import com.kharim.orderservice.dto.OrderedItemsDto;
@@ -24,7 +25,7 @@ import java.util.stream.Collectors;
 public class OrderService {
 
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
+    private final WebConfig webClient;
 
     public void placeOrder(OrderRequest orderRequest) {
         Order order1 = new Order();
@@ -42,8 +43,8 @@ public class OrderService {
                 .collect(Collectors.toList());
 
 //        Call Inventory service to check availability of a product and place an order.
-        InventoryResponse[] inventoryResponses = webClient.get()
-                .uri("/http://127.0.0.1:8875", uriBuilder -> uriBuilder
+        InventoryResponse[] inventoryResponses = webClient.webClient().build().get()
+                .uri("/http://inventory-service", uriBuilder -> uriBuilder
                         .queryParam("skuCode", skuCodes).build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)

@@ -1,2 +1,4 @@
+com/kharim/apigateway/config/SecurityConfig.java
+ com.kharim.apigateway.config.SecurityConfig
 com/kharim/apigateway/ApiGatewayApplication.java
  com.kharim.apigateway.ApiGatewayApplication
